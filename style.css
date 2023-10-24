@@ -12,10 +12,10 @@ html::before{
     align-content: first baseline;
 }
 
-.icon {
+.icon{
     color: red; 
 }
 
-.icon-2 {
+.icon-2{
     color: green;
 }
