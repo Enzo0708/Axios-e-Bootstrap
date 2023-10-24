@@ -1,10 +1,13 @@
 const tabela = document.querySelector('.tabela-js')
+
+// PEGANDO INFORMAÇÔES DA TABELA
 axios.get('https://apiaulas.enzobiason7.repl.co/funcionarios').then(function (resposta) {
     getData(resposta.data)
 }).catch(function (error) {
     console.log(error)
 })
 
+// TABELA MONTADA
 function getData(dados) {
     dados.map((item) => {
         tabela.innerHTML += `
